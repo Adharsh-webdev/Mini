@@ -1,0 +1,267 @@
+/* Main Container */
+.homewhole-container{
+  height: 100vh;
+
+}
+
+
+
+
+.homeContainer {
+  /* border: 2px solid red; */
+  width: 75%;
+  margin: auto;
+  padding: 10px;
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Badge */
+.homePillBadge {
+  display: inline-block;
+  padding: 4px 10px;
+  background-color: #e2eeff;
+  color: #113db4;
+  border-radius: 100px;
+  font-weight: bold;
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+.homeContentBox{
+  margin-top: 25px;
+}
+.home-bankc{
+  font-size: 40px;
+  font-weight: bold;
+}
+.homesmart{
+  color: rgb(34, 94, 206);
+}
+.homefin{
+  color:  rgb(34, 94, 206);
+}
+/* Small Paragraph */
+.homeSmallContent {
+  color: grey;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+/* Button */
+.homeButtonContent {
+  margin-top: 10px;
+}
+
+.homeOpenBtn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+  color: #e2eeff;
+  background-color: black;
+  cursor: pointer;
+}
+
+/* Card Container */
+.homeCardContainer {
+  /* border: 2px solid green; */
+  width: 310px;
+  height: 160px;
+  border-radius: 25px;
+  background-color: rgb(32, 26, 56);
+  padding: 20px 20px;
+}
+
+/* Logo */
+.homeLogo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.homeLogo img {
+  width: 50px;
+  height: 20px;
+}
+
+/* Circle */
+.homeCircle {
+  border: 2px solid white;
+  width: 22px;
+  height: 21px;
+  padding: 2px;
+  border-radius: 50%;
+}
+
+/* Card Number */
+.homeCardNumber h3 {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 2px;  /* Space between digits */
+  word-spacing: 15px;   /* Space between groups */
+}
+
+/* Bottom Row */
+.homeCardLast {
+  display: flex;
+padding: 10px 0px;
+  justify-content: space-between;
+  /* border: 2px solid red; */
+
+}
+
+/* Text */
+.homeHolder {
+  color: grey;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.homeOwner {
+  color: white;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+/* Chip */
+.homeChip {
+  width: 60px;
+  margin-top: 10px;
+}
+/* =========================
+   Tablets: 768px - 1024px
+========================= */
+@media (max-width: 1024px) {
+  .homeContainer {
+    width: 85%;            /* slightly smaller container */
+    gap: 20px;             /* reduce spacing between items */
+  }
+
+  .home-bankc {
+    font-size: 32px;       /* reduce heading size */
+  }
+
+  .homeSmallContent {
+    font-size: 14px;       /* smaller paragraph text */
+  }
+
+  .homeCardContainer {
+    width: 280px;
+    height: 150px;
+    padding: 15px;
+  }
+
+  .homeLogo img {
+    width: 45px;
+    height: 18px;
+  }
+
+  .homeCardNumber h3 {
+    font-size: 16px;
+    word-spacing: 12px;
+  }
+
+  .homeChip {
+    width: 55px;
+  }
+}
+
+/* =========================
+   Small Tablets / Large Phones: 600px - 767px
+========================= */
+@media (max-width: 767px) {
+  .homeContainer {
+    flex-direction: column;  /* stack content vertically */
+    align-items: center;
+     margin-top: 40px;
+  }
+
+  .homeContentBox,
+  .homeCardContainer {
+    width: 90%;
+  
+    max-width: 320px;
+    margin: auto;
+  }
+
+  .home-bankc {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .homeSmallContent {
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .homeButtonContent {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .homeOpenBtn {
+    width: 80%;
+    text-align: center;
+  }
+
+  .homeCardNumber h3 {
+    font-size: 15px;
+    word-spacing: 10px;
+  }
+}
+
+/* =========================
+   Mobile Phones: 0 - 599px
+========================= */
+@media (max-width: 599px) {
+  .homeContainer {
+    width: 95%;
+    margin-top: 30px;
+  }
+.homePillBadge {
+margin-left: 18%;
+
+
+}
+  .home-bankc {
+    font-size: 24px;
+  }
+
+  .homeSmallContent {
+    font-size: 12px;
+  }
+
+  .homeCardContainer {
+    width: 100%;
+    max-width: 280px;
+    height: auto;       /* auto height for content */
+    padding: 15px;
+  }
+
+  .homeLogo img {
+    width: 40px;
+    height: 16px;
+  }
+
+  .homeCardNumber h3 {
+    font-size: 14px;
+    word-spacing: 8px;
+  }
+
+  .homeChip {
+    width: 50px;
+  }
+
+  .homeHolder,
+  .homeOwner {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,110 @@
+/* ===== Navbar Main ===== */
+.myNavbar {
+  height: 70px;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  /* border: 2px solid black; */
+ 
+
+  width: 80%;
+  margin: auto;
+  border-radius: 28px;
+  position: sticky;
+  top: 10px;
+  z-index: 1000;
+}
+
+/* ===== Container ===== */
+.myNavbarContainer {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ===== Logo ===== */
+.myNavbarLogo img {
+  width: 80px;
+  height: auto;
+}
+
+/* ===== Nav Content ===== */
+.myNavbarContent {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* ===== Buttons ===== */
+.myNavbarActions {
+  display: flex;
+  gap: 1rem;
+}
+
+.myNavbarLoginBtn {
+  background: transparent;
+  border: none;
+  color: #333;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.myNavbarGetStartedBtn {
+  background-color: #216cf6;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 20px;
+  box-shadow: rgba(4, 58, 252, 0.35) 0px 5px 12px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.myNavbarGetStartedBtn:hover {
+  background-color: #1054ff;
+}
+
+/* ===== Menu Icon ===== */
+.myNavbarMenuIcon {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* ===== Responsive Mobile ===== */
+@media screen and (max-width: 768px) {
+  .myNavbarMenuIcon {
+    display: block;
+    z-index: 1001;
+  }
+
+  .myNavbarContent {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 70%;
+    background: #fff;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.4s ease-in-out;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .myNavbarContent.active {
+    right: 0;
+  }
+
+  .myNavbarActions {
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .myNavbarGetStartedBtn {
+    width: 100%;
+  }
+}

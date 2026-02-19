@@ -1,0 +1,15 @@
+.dash-container{
+    display: grid;
+    grid-template-columns: 19% 80%;
+    overflow: hidden;
+    /* border: 2px solid red; */
+    gap: 20px;
+   
+}
+
+@media (max-width: 768px){
+    .dash-container{
+        grid-template-columns: 100%;
+        gap: 0px;
+    }
+}
