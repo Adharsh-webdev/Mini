@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Route, Routes } from 'react-router-dom';
 
 import Home from './pages/Home/Home';
@@ -11,8 +11,18 @@ import AccountSettings from './pages/Settings/UpdateForm';
 
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+// import { OrbitLoader } from 'react-loaderkit';
+
+import BankLoader from "./components/BankLoader/BankLoader";
 
 const App = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => setLoading(false), 3000);
+  }, []);
+
+  if (loading) return <BankLoader />;
   return (
     <>
       <ToastContainer position="top-right" autoClose={3000} />
@@ -30,6 +40,14 @@ const App = () => {
       </Routes>
     </>
   )
-}
+};
 
-export default App
+const loaderStyle = {
+  height: "100vh",
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  background: "#0f172a"
+};
+
+export default App;
